@@ -15,7 +15,7 @@ Biometric spoofing involves presenting artificial biometric samples (e.g., fake 
 - 🧪 **Latex molds** capturing real fingerprints
 - 🖨️ **Printed images** of fingerprints
 - 🧬 **Synthetic fingerprints** generated using neural networks (GANs)
-![Presentation Attacks](img/Presentation Attacks.png)
+![Presentation Attacks](img/PresentationAttacks.png)
 
 These attacks threaten the **integrity**, **privacy**, and **security** of systems in banking, law enforcement, healthcare, and border control. Thus, there's a growing need for **Presentation Attack Detection (PAD)** techniques that can robustly detect and reject such spoof attempts.
 
@@ -72,9 +72,9 @@ The **LivDet2015** dataset is the gold standard for evaluating fingerprint spoof
   - **Cross-sensor**: test on unseen sensor (real-world scenario)
 
 ### Dataset Visualizations
-![Train Split](img/training data.png)  
-![Test Split](img/testing set.png)  
-![Spoof Materials](img/testing set _ fake materials distribution.png)
+![Train Split](img/trainingdata.png)  
+![Test Split](img/testingset.png)  
+![Spoof Materials](img/testingsetfakematerialsdistribution.png)
 
 ---
 
@@ -166,7 +166,6 @@ ConvNeXt Tiny is highly effective for fingerprint spoof detection because:
 
 ## ⚙️ Model Summary
 
-```text
 ConvNeXt Tiny:
 - Parameters: ~28.6M
 - FLOPs: ~4.5 GFLOPs
@@ -216,18 +215,18 @@ ConvNeXt Tiny:
 ### 📊 Visual Results
 
 - ROC Curves  
-  ![ROC](img/ROC Curve _ green bit.png)
+  ![ROC](img/ROCCurvegreenbit.png)
 
 - PR Curve  
-  ![PR](img/precision recall curve _ green bit.png)
+  ![PR](img/precisionrecallcurvegreenbit.png)
 
 - Validation Accuracy  
-  ![Val Acc](img/validation accuracy par capteur.png)
+  ![Val Acc](img/validationaccuracyparcapteur.png)
 
 - Sensor-wise Comparison  
-  ![Accuracy](img/test accuracy par capteur.png)  
-  ![F1](img/F1 scores par capteur.png)  
-  ![Comparison](img/comparaison des performances selon le capteur.png)
+  ![Accuracy](img/testaccuracyparcapteur.png)  
+  ![F1](img/F1scoresparcapteur.png)  
+  ![Comparison](img/comparaisondesperformancesselonlecapteur.png)
 
 ---
 
@@ -235,19 +234,19 @@ ConvNeXt Tiny:
 
 | GreenBit |  
 |----------|  
-| ![](img/confusion matrix _ greenBit.png) |
+| ![](img/confusionmatrixgreenBit.png) |
 
 | DigitalPersona |  
 |----------------|  
-| ![](img/matrice de confusion digital personna.png) |
+| ![](img/matricedeconfusiondigitalpersonna.png) |
 
 | Hi_Scan |  
 |---------|  
-| ![](img/matrice de confusion _ hi scan.png) |
+| ![](img/matricedeconfusionhiscan.png) |
 
 | CrossMatch |  
 |------------|  
-| ![](img/matrice de confusion _ cross match.png) |
+| ![](img/matricedeconfusioncrossmatch.png) |
 
 ---
 
@@ -263,7 +262,6 @@ A minimal GUI has been implemented using **Streamlit**, allowing:
 ### Run the App
 ```bash
 streamlit run app.py
-
 
 ---
 
