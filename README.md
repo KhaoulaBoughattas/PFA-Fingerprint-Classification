@@ -1,12 +1,12 @@
 # 🔐 Fingerprint Spoof Detection using ConvNeXt Tiny
----
+
 ## 📌 Introduction
 
 Fingerprint-based biometric systems are increasingly deployed in critical areas such as banking, mobile devices, and secure access systems. Their popularity stems from the uniqueness and permanence of fingerprints. However, these systems are not immune to attacks — especially **spoofing**, where adversaries present fake fingerprints to bypass authentication.
 
 This project presents an **end-to-end system** for fingerprint spoof detection using the **ConvNeXt Tiny** deep learning model, a powerful yet lightweight CNN architecture. It combines solid model performance, a real-world dataset (LivDet2015), and a user-friendly **Streamlit GUI** to offer a practical and deployable solution.
 
----
+
 
 ## 🏛️ Context & Problem Statement
 
@@ -19,7 +19,6 @@ Biometric spoofing involves presenting artificial biometric samples (e.g., fake 
 
 These attacks threaten the **integrity**, **privacy**, and **security** of systems in banking, law enforcement, healthcare, and border control. Thus, there's a growing need for **Presentation Attack Detection (PAD)** techniques that can robustly detect and reject such spoof attempts.
 
----
 
 ## 🎯 Objectives
 
@@ -29,13 +28,13 @@ These attacks threaten the **integrity**, **privacy**, and **security** of syste
 - 🧪 Explore **model generalization** to unseen sensors and spoofing materials
 - 🖥️ Build a real-time **GUI with Streamlit** to facilitate non-technical usage
 
----
+
 
 ## 💡 Motivation
 
 Most high-performance PAD models are too **computationally heavy** or **dataset-specific** for real-world deployment. This project explores how **modern lightweight CNNs** like **ConvNeXt Tiny** can bridge the gap between **accuracy** and **deployability**.
 
----
+
 
 ## 📚 Literature Review – PAD Techniques
 
@@ -52,7 +51,7 @@ Most high-performance PAD models are too **computationally heavy** or **dataset-
 
 > 📌 Most existing systems either lack generalization or are unsuitable for real-world embedded environments. This project addresses that gap.
 
----
+
 
 ## 🔄 Dataset: LivDet2015
 
@@ -76,7 +75,6 @@ The **LivDet2015** dataset is the gold standard for evaluating fingerprint spoof
 ![Test Split](img/testingset.png)  
 ![Spoof Materials](img/testingsetfakematerialsdistribution.png)
 
----
 
 
 # 🤖 ConvNeXt Tiny - Anti-Spoofing Fingerprint Classification
@@ -87,7 +85,7 @@ The **LivDet2015** dataset is the gold standard for evaluating fingerprint spoof
 
 In the context of **Presentation Attack Detection (PAD)** for fingerprint recognition, ConvNeXt Tiny is fine-tuned to perform **binary classification** — distinguishing between **Live** and **Spoofed** fingerprints. The model is particularly well-suited for this due to its ability to capture **fine-grained textural patterns** and **structural cues**, which are essential to detect subtle differences between genuine skin and spoofing materials like silicone or gelatin.
 
----
+
 
 ## ✅ Why ConvNeXt Tiny?
 
@@ -99,7 +97,6 @@ In the context of **Presentation Attack Detection (PAD)** for fingerprint recogn
 | 🧪 **Fine-tuning Friendly**    | Pre-trained on ImageNet and easy to adapt via transfer learning for downstream tasks like fingerprint anti-spoofing |
 | 🔁 **Efficient Inference**     | Highly optimized for both GPU and CPU with parallelizable and hardware-friendly operations |
 
----
 
 ## 🏗️ Architecture Highlights
 
@@ -150,7 +147,6 @@ ConvNeXt Tiny rethinks every aspect of the CNN pipeline, applying modern techniq
 - Reduces the 7×7×768 output to a 768-dimensional vector.
 - Followed by a dense layer and sigmoid activation for binary classification (Live vs Spoof).
 
----
 
 ## 🔐 Relevance to Anti-Spoofing
 
@@ -161,7 +157,6 @@ ConvNeXt Tiny is highly effective for fingerprint spoof detection because:
 - 🧠 **Transformer-like components enable better generalization** across spoofing materials and acquisition devices.
 - 💡 **Architecture is modular**, allowing potential fusion with temporal or multispectral modalities for multimodal PAD systems.
 
----
 
 ## ⚙️ Model Summary
 
@@ -172,8 +167,6 @@ ConvNeXt Tiny:
 - Input Size: 224×224
 - Output: Sigmoid-activated single neuron (Live/Spoof)
 
-
----
 
 ## ⚙️ Training Setup
 
@@ -187,7 +180,6 @@ ConvNeXt Tiny:
 - **Regularization**: Dropout + Early Stopping + Weight Decay
 - **Validation Strategy**: Stratified cross-validation
 
----
 
 ## 📈 Performance Summary
 
@@ -209,7 +201,6 @@ ConvNeXt Tiny:
 
 > 🔍 Drop in cross-sensor accuracy highlights a **generalization gap**, motivating future work on **domain adaptation** and **sensor-invariant features**.
 
----
 
 ### 📊 Visual Results
 
@@ -227,7 +218,6 @@ ConvNeXt Tiny:
   ![F1](img/F1scoresparcapteur.png)  
   ![Comparison](img/comparaisondesperformancesselonlecapteur.png)
 
----
 
 ### 🔍 Confusion Matrices
 
@@ -261,8 +251,7 @@ A minimal GUI has been implemented using **Streamlit**, allowing:
 ### Run the App
 ```bash
 streamlit run app.py
-
----
+```
 
 ## ⚙️ Installation & Environment
 
@@ -291,8 +280,6 @@ pillow
 tqdm
 ```
 
----
-
 ## 🌟 Future Work
 
 🔁 Improve cross-sensor generalization via domain adaptation
@@ -307,14 +294,16 @@ tqdm
 
 🔐 Extend to multimodal PAD (e.g., ECG + Fingerprint)
 
----
 
 ## 👤 Author
 
 **Khaoula Boughattas**  
-ENET'Com - University of Sfax  
+Data Engineering and Decision Systems Student – ENET'COM  
 Final Year Project – April 2025  
 Supervisor: Mrs. Sonda Ammar  
+
+- [LinkedIn](https://www.linkedin.com/in/khaoula-boughattas-983597295/)  
+- [Email](mailto:boughattaskhawla@gmail.com)
 
 ---
 
@@ -328,8 +317,11 @@ Supervisor: Mrs. Sonda Ammar
 - [Deep Learning for Fingerprint Spoof Detection](https://arxiv.org/abs/1701.07417)
 - [TorchVision ConvNeXt Docs](https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_tiny.html)
 
-
-
 ---
+
+## 📜 License
+
+This repository is for **educational and research purposes only**, developed during the **Final Year Project 2025**.  
+For collaboration, reuse, or partnership opportunities, please contact the author.
 
 > This project demonstrates the potential of deep learning to strengthen biometric systems against modern spoofing attacks.
