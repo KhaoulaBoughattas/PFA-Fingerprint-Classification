@@ -62,8 +62,6 @@ Cette comparaison met en évidence les avancées dans le domaine, tout en soulig
 
 ---
 
-N’hésite pas si tu souhaites que je t’aide à intégrer plus de détails techniques, un schéma d’architecture, ou une section sur la méthodologie.
-
 
 ## 🔄 Dataset: LivDet2015
 
@@ -74,7 +72,9 @@ N’hésite pas si tu souhaites que je t’aide à intégrer plus de détails te
 
 📊 **Dataset Distribution:**
 
-![Dataset Distribution](img/dataset_distribution.png)
+![Dataset Distribution](img/training data.png)
+![Dataset Distribution](img/testing set.png)
+![Dataset Distribution](img/testing set _ fake materials distribution.png)
 
 
 *Figure 1 : Distribution des images du dataset LivDet2015, selon les catégories Live vs Fake et par capteurs.*
