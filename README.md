@@ -1,7 +1,5 @@
 # 🔐 Fingerprint Spoof Detection using ConvNeXt Tiny
-
 ---
-
 ## 📌 Introduction
 
 Fingerprint-based biometric systems are increasingly deployed in critical areas such as banking, mobile devices, and secure access systems. Their popularity stems from the uniqueness and permanence of fingerprints. However, these systems are not immune to attacks — especially **spoofing**, where adversaries present fake fingerprints to bypass authentication.
@@ -17,7 +15,7 @@ Biometric spoofing involves presenting artificial biometric samples (e.g., fake 
 - 🧪 **Latex molds** capturing real fingerprints
 - 🖨️ **Printed images** of fingerprints
 - 🧬 **Synthetic fingerprints** generated using neural networks (GANs)
-![Presentation Attacks](img/Presentation Attacks)
+![Presentation Attacks](img/Presentation Attacks.png)
 
 These attacks threaten the **integrity**, **privacy**, and **security** of systems in banking, law enforcement, healthcare, and border control. Thus, there's a growing need for **Presentation Attack Detection (PAD)** techniques that can robustly detect and reject such spoof attempts.
 
