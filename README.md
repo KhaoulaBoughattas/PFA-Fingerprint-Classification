@@ -104,7 +104,6 @@ In the context of **Presentation Attack Detection (PAD)** for fingerprint recogn
 ## 🏗️ Architecture Highlights
 
 ConvNeXt Tiny rethinks every aspect of the CNN pipeline, applying modern techniques while remaining convolutional at its core.
-<img width="740" height="210" alt="image" src="https://github.com/user-attachments/assets/63a6d623-c417-4caa-97e0-9bd1997ceb5e" />
 ![ConvNeXt Diagram](img/ArchitectureConvnext.png)
 
 
