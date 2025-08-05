@@ -1,5 +1,3 @@
-<img width="740" height="210" alt="image" src="https://github.com/user-attachments/assets/63a6d623-c417-4caa-97e0-9bd1997ceb5e" />
-
 # 🔐 Fingerprint Spoof Detection using ConvNeXt Tiny
 
 ---
@@ -19,7 +17,7 @@ Biometric spoofing involves presenting artificial biometric samples (e.g., fake 
 - 🧪 **Latex molds** capturing real fingerprints
 - 🖨️ **Printed images** of fingerprints
 - 🧬 **Synthetic fingerprints** generated using neural networks (GANs)
-
+<img width="740" height="210" alt="image" src="https://github.com/user-attachments/assets/63a6d623-c417-4caa-97e0-9bd1997ceb5e" />
 ![Presentation Attacks](img/Capture d'écran 2025-08-05 111006.png)
 
 These attacks threaten the **integrity**, **privacy**, and **security** of systems in banking, law enforcement, healthcare, and border control. Thus, there's a growing need for **Presentation Attack Detection (PAD)** techniques that can robustly detect and reject such spoof attempts.
@@ -77,7 +75,7 @@ The **LivDet2015** dataset is the gold standard for evaluating fingerprint spoof
   - **Cross-sensor**: test on unseen sensor (real-world scenario)
 
 ### Dataset Visualizations
-
+<img width="740" height="210" alt="image" src="https://github.com/user-attachments/assets/63a6d623-c417-4caa-97e0-9bd1997ceb5e" />
 ![Train Split](img/training data.png)  
 ![Test Split](img/testing set.png)  
 ![Spoof Materials](img/testing set _ fake materials distribution.png)
@@ -110,6 +108,7 @@ In the context of **Presentation Attack Detection (PAD)** for fingerprint recogn
 ## 🏗️ Architecture Highlights
 
 ConvNeXt Tiny rethinks every aspect of the CNN pipeline, applying modern techniques while remaining convolutional at its core.
+<img width="740" height="210" alt="image" src="https://github.com/user-attachments/assets/63a6d623-c417-4caa-97e0-9bd1997ceb5e" />
 ![ConvNeXt Diagram](img/Capture d'écran 2025-08-05 133118.png)
 
 
