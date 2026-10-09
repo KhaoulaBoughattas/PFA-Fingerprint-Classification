@@ -325,3 +325,4 @@ This repository is for **educational and research purposes only**, developed dur
 For collaboration, reuse, or partnership opportunities, please contact the author.
 
 > This project demonstrates the potential of deep learning to strengthen biometric systems against modern spoofing attacks.
+
